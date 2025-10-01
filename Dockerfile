@@ -25,6 +25,7 @@ ADD --chown=indy:indy indy_config.py /etc/indy/
 ADD --chown=indy:indy . $HOME
 
 RUN chmod +x scripts/init_genesis.sh
+RUN chmod +x /home/indy/bin/von_generate_transactions
 
 RUN mkdir -p \
     $HOME/cli-scripts \
